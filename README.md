@@ -9,8 +9,9 @@
 
 #### Résumé du projet :
 
+Le but de ce projet est de mettre en lumière l'impact positif des influenceurs. Pour ce faire, Lucrèce, journaliste en région parisienne, a décidé de créer une cérémonie récompensant les meilleurs influenceurs africains, ou d'origine africaine. 90 influenceurs ont été nominés dans 15 catégories différentes, comme la musique, l'humour... Côté communication, la mission principale sera de faire la promotion de l'évènement qui aura lieu du 22 au 24 novembre 2021 à Accra, dans le nord du Ghana, mais également de l'association partenaire qui participe à ce projet. Un documentaire sera réalisé afin d'être partagé et d'avoir un impact sur la jeunesse un peu partout dans le monde, notamment en cette période difficile à cause de la pandémie qui touche notre monde. D'un point de vue informatique et statistique, nous sommes chargés de créer un site web avec un module de vote, de mettre en place une visulisation des résultats en cours et d'une cartographie des pays qui auront le plus participé, afin de créer de l'engouement autour de cet événement.
 
-Ce projet représente donc pour nous Data scientist un moyen de mettre en valeur principalement nos compétences en programmation web, gestion de base de données et analyses statistiques.
+Ce projet représente donc, pour nous Data scientist, un moyen de mettre en valeur principalement nos compétences en programmation web, gestion de base de données et analyses statistiques.
 
 La finalité de ce projet est donc de mettre en valeur les influenceurs Africains et de les encourager au travers de cette cérémonie de remise des prix afin qu'ils gagnent leurs lettres de noblesse.
 
@@ -23,10 +24,22 @@ Projet dirigé par Florian Bordes et Solene Vion
 #### Chef de groupe : 
 Sophie NGOTALA - Master MIASHS
 
+#### Participants :
+##### INFOCOM :
+Sonia
+Yoann
+Alica
+
+##### MIASHS :
+Cheikh
+Sophie
+Thibaut
+Yannis
+
 #### Outils utilisés :
 - Programmation web : 
-- Gestion de base de données : 
-- Analyse statistiques : 
+- Gestion de base de données : XAMPP, MySQL, mysql-connector (python)
+- Analyse statistiques : pandas, matplotlib...
 
 #### Répartition des taches :
 
