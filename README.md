@@ -2,7 +2,16 @@
 
 ## Marathon du Web UPV3 2020-2021 : Abdia
 
-#### Abstract :
+#### Liens utiles :
+
+- Google Drive : https://drive.google.com/drive/folders/1EttiMe1cR9XYs_Y3i5ohPedAXs_LxYeB?usp=sharing
+- GitHub Project : https://github.com/yannisrachid/marathon/projects/1
+
+#### Résumé du projet :
+
+#### Qu'est-ce qu'un influenceur ?
+
+#### Nos encadrants :
 
 #### Lundi 22 mars 2021.
 
