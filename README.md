@@ -9,11 +9,16 @@
 
 #### Résumé du projet :
 
-#### Qu'est-ce qu'un influenceur ?
 
-#### Nos encadrants : luvvgvgghh
+Ce projet représente donc pour nous Data scientist un moyen de mettre en valeur principalement nos compétences en programmation web, gestion de base de données et analyses statistiques.
+#### Qu'est-ce qu'un influenceur ?
+Selon le Journal du Net, "Un influenceur est une personnalité publique qui utilise les réseaux sociaux, les blogs, les vidéos et autres moyens de communication sur le web, afin de partager ses opinions avec les internautes."
+
+#### Nos encadrants : 
+Projet dirigé par Florian Bordes et Solene Vion
 
 #### Outils utilisés :
+
 
 #### Lundi 22 mars 2021.
 
