@@ -19,9 +19,7 @@ La finalité de ce projet est de mettre en valeur les influenceurs Africains et 
 Selon le Journal du Net, "Un influenceur est une personnalité publique qui utilise les réseaux sociaux, les blogs, les vidéos et autres moyens de communication sur le web, afin de partager ses opinions avec les internautes."
 
 #### Nos encadrants : 
-Projet dirigé par Florian Bordes et Solène Vion
-MIASHS : Sophie Lèbre, Pierre Lafaye de Micheaux, Cédric Lopez, Maximilien Servajean
-INFOCOM : Marie-Caroline Heïd, F Marty
+Projet dirigé par Florian Bordes et Solene Vion
 
 #### Chef de groupe : 
 Sophie NGOTALA - Master MIASHS
@@ -43,7 +41,9 @@ Yannis
 - Gestion de base de données : XAMPP, MySQL, mysql-connector (python)
 - Analyse statistiques : pandas, matplotlib...
 
-#### Répartition des taches :
+#### Répartition des taches pour ce premier sprint:
+- Yannis et Sophie : Gestion de base de données 
+- Cheikh et Thibaut : Mise en production de l'infrastructure du site web
 
 #### Lundi 22 mars 2021.
 
