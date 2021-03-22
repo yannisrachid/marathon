@@ -11,8 +11,9 @@
 
 #### Qu'est-ce qu'un influenceur ?
 
-#### Nos encadrants :
 
+#### Nos encadrants :
+Projet commandité par Lucrece et dirigé par Solene et Florian 
 #### Outils utilisés :
 
 #### Lundi 22 mars 2021.
