@@ -11,7 +11,7 @@
 
 #### Qu'est-ce qu'un influenceur ?
 
-#### Nos encadrants :
+#### Nos encadrants : luvvgvgghh
 
 #### Outils utilisés :
 
