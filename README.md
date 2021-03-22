@@ -25,15 +25,15 @@ Projet dirigé par Florian Bordes et Solene Vion
 Sophie NGOTALA - Master MIASHS
 
 #### Participants :
-##### INFOCOM :
-Sonia
-Yoann
+##### - INFOCOM :
+Sonia,
+Yoann,
 Alica
 
-##### MIASHS :
-Cheikh
-Sophie
-Thibaut
+##### - MIASHS :
+Cheikh,
+Sophie,
+Thibaut,
 Yannis
 
 #### Outils utilisés :
