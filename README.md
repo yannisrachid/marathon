@@ -20,6 +20,9 @@ La finalité de ce projet est de mettre en valeur les influenceurs Africains et 
 #### Qu'est-ce qu'un influenceur ?
 Selon le Journal du Net, "Un influenceur est une personnalité publique qui utilise les réseaux sociaux, les blogs, les vidéos et autres moyens de communication sur le web, afin de partager ses opinions avec les internautes."
 
+#### Description du jeu de données :
+Un fichier excel  avec une table comportant les informations sur les nominés et les catégories qui sont donc nos variables. Nous avons 63 Influenceurs répartis dans 13 Catégories.
+
 #### Nos encadrants : 
 Projet dirigé par Florian Bordes et Solene Vion
 
