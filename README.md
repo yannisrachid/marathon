@@ -44,10 +44,3 @@ Yannis
 #### Répartition des taches pour ce premier sprint:
 - Yannis et Sophie : Gestion de base de données 
 - Cheikh et Thibaut : Mise en production de l'infrastructure du site web
-
-#### Lundi 22 mars 2021.
-
-- Définition du plan d'action, de la maquette du site.
-
-- Créations des outils de suivi : GitHub, GitHub project, Google Docs.
-
