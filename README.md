@@ -46,6 +46,8 @@ Yannis
 - Gestion de base de données : XAMPP, MySQL, mysql-connector (python)
 - Analyse statistiques : pandas, matplotlib...
 
-#### Répartition des taches pour ce premier sprint:
-- Yannis et Sophie : Gestion de base de données 
-- Cheikh et Thibaut : Mise en production de l'infrastructure du site web
+#### Liste totale des taches: 
+Sur le Github project dont le lien est ci-dessus.
+
+#### Taches éffectuées à ce jour : 
+https://drive.google.com/drive/folders/15C71ojv6VH6QP_-dIb77-wG5yuJlvcTu
