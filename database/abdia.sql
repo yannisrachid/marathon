@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 22 mars 2021 à 21:56
+-- Généré le : mar. 23 mars 2021 à 13:48
 -- Version du serveur :  10.4.14-MariaDB
 -- Version de PHP : 7.4.10
 
@@ -20,6 +20,84 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `abdia`
 --
+
+DELIMITER $$
+--
+-- Procédures
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `alpha` (IN `aa` INT)  NO SQL
+BEGIN
+
+declare retour int;
+set retour=0;
+
+select count(*) into retour from influenceur;
+
+if retour>aa then 
+select retour;
+ELSE
+select 'blabla';
+end if;
+
+end$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `procédure_vote` (IN `vpseudo` VARCHAR(50), IN `vip` VARCHAR(50), IN `vage` VARCHAR(50), IN `vpays` VARCHAR(50), IN `vgenre` VARCHAR(50), IN `vid_event` INT, IN `vid_influenceur` INT, IN `vdate_vote` DATE)  BEGIN
+declare verif_inscription, verif_ip, verif_pseudo,retour int;
+declare deb, fin date;
+
+set retour=0;
+/*on verifie si l'utilisateur est inscrit =1 et 0 sinon*/
+select count(*) into  verif_inscription from utilisateur 
+where pseudo = vpseudo;
+
+/*on compte le nombre de fois que cet ip a voté dans la journée**/
+select count(u.ip) into verif_ip from voter v, utilisateur u where v.pseudo=u.pseudo and v.date_vote=vdate_vote and u.ip= vip;
+
+/*on compte le nombre de fois que ce pseudo a voté dans la journée*/
+select count(pseudo) into verif_pseudo from voter where pseudo= vpseudo and date_vote= vdate_vote;
+
+/*on sélectionne la date début de l'évènement*/
+select date_debut into deb from evenement where id_event= vid_event;
+
+/*on sélectionne la date fin de l'évènement*/
+select date_fin into fin from evenement where id_event= vid_event;
+
+/*Vérifications*/
+
+/*on inscrit le votant si ce n'est pas encore le cas*/
+if (verif_inscription = 0) then 
+insert into utilisateur(pseudo,ip,  pays, age, genre) values (vpseudo,vip,  vpays, vage, vgenre );
+end if;
+
+/*on vérifie que le pseudo n'a pas déjà voté dans la journée, si oui retour=-1*/
+if verif_pseudo > 0 then 
+set retour= -1;
+
+/*on vérifie que le ip n'a pas voté plus de 5 fois dans la journée, si oui retour=-2*/
+ELSEIF verif_ip >5 THEN 
+set retour= -2 ;
+
+
+/*on vérifie si le vote est toujours ouvert, si oui retour=-3*/
+ELSEIF deb> vdate_vote or fin< vdate_vote then 
+set retour= -3;
+
+/*si tout s'est bien passé retour=0*/
+else
+set retour=0;
+end if;
+
+/*si tout s'est bien passé on insère le vote*/
+if retour=0 THEN
+insert into voter(date_vote,ip, id_event, id_influenceur, pseudo) values(vdate_vote, vip, vid_event, vid_influenceur, vpseudo);
+end if;
+
+/*on retourne la variable retour*/
+select deb, fin,vdate_vote, retour;
+
+END$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -143,7 +221,22 @@ INSERT INTO `influenceur` (`id_influenceur`, `nom_influenceur`, `id_categorie`) 
 (60, 'LES TWINS', 10),
 (61, 'HAPSATOU SY', 12),
 (62, 'AFRIQUETTE', 7),
-(63, 'JENY BSG', 10);
+(63, 'JENY BSG', 10),
+(64, 'TOUS EN WAX', 7),
+(65, 'SCHEENA DONIA', 13),
+(66, 'KERY JAMES', 13),
+(67, 'JOJO LE COMEDIEN', 6),
+(68, 'TATA OSCA', 6),
+(69, 'JERRY PURPDRANK', 6),
+(70, 'AKIMOTO', 11),
+(71, 'MR BORIS BECKER', 11),
+(72, 'OMAR SY', 13),
+(73, 'JACKIE AINA', 13),
+(74, 'KOBBY WILLS OFFICIAL', 13),
+(75, 'OBSERVATEUR EBENE', 6),
+(76, 'KIITANA', 11),
+(77, 'FARIDA SAIDOU', 11),
+(78, 'AMINA MAGAZINE', 7);
 
 -- --------------------------------------------------------
 
@@ -230,7 +323,7 @@ ALTER TABLE `evenement`
 -- AUTO_INCREMENT pour la table `influenceur`
 --
 ALTER TABLE `influenceur`
-  MODIFY `id_influenceur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id_influenceur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- Contraintes pour les tables déchargées
