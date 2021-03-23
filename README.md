@@ -23,6 +23,8 @@ Selon le Journal du Net, "Un influenceur est une personnalité publique qui util
 #### Description du jeu de données :
 Un fichier excel  avec une table comportant les informations sur les nominés et les catégories qui sont donc nos variables. Nous avons 63 Influenceurs répartis dans 13 Catégories.
 
+#### Commande validée par les commanditaires : OUI
+
 #### Nos encadrants : 
 Projet dirigé par Florian Bordes et Solene Vion
 
