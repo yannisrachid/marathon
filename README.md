@@ -44,7 +44,7 @@ Thibaut,
 Yannis
 
 #### Outils utilisés :
-- Programmation web : 
+- Programmation web : html/css
 - Gestion de base de données : XAMPP, MySQL, mysql-connector (python)
 - Analyse statistiques : pandas, matplotlib...
 
