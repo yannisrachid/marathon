@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Vote</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"> </script>
+  <link rel="stylesheet"  href="/static/testcss11.css" >
+
+  <style type="text/css">
+    
+    .half_opacity
+    {
+        opacity: 0.8;
+        /*cursor: pointer;*/
+    }
+    .full_opacity
+    {
+        opacity: 1;
+        /*cursor: pointer;*/
+    }
+    .influenceur_vote:hover
+    {
+        opacity: 1;
+    }
+    .influenceur_vote
+    {
+        cursor: pointer
+    }
+
+
+
+    /*
+    .half_opacity:hover{
+      opacity: 1;
+    }*/
+    /*
+    .full_opacity{
+      opacity: 1;
+      cursor: pointer;
+    }
+    .full_opacity:hover{
+      opacity: 0.5;
+    }*/
+  </style>
+</head>
+<body>
+ <!-- <h1>IMELDAààààÒ </h1> -->
+  <div class="header"></div>
+  <h1 class="presentation" id="header" style="margin-top: 50px;color:  #FFDE00;"> Catégories de vote </h1>
+  <div class="globalCategorie">
+   
+
+            <div class="cattravel" id="1" onclick="afficherInfluenceur('1')">
+            
+            </div>
+            <div class="catlifestyle" id="2" onclick="afficherInfluenceur('2')">
+             
+            </div>
+            <div class="catfood" id="5" onclick="afficherInfluenceur('5')">
+             
+            </div>
+            <div class="catfashio_m" id="3" onclick="afficherInfluenceur('3')">
+             
+            </div>
+            <div class="catfashio_w" id="4" onclick="afficherInfluenceur('4')">
+             
+            </div>
+            <div class="cathumour" id="6" onclick="afficherInfluenceur('6')">
+              
+            </div>
+            <div class="catchanteur" id="8" onclick="afficherInfluenceur('8')">
+             
+            </div>
+            <div class="catchanteuse" id="9" onclick="afficherInfluenceur('9')">
+              
+            </div>
+            <div class="catdanseurs" id="10" onclick="afficherInfluenceur('10')">
+              
+            </div>
+      <div class="catmedia" id="7" onclick="afficherInfluenceur('7')">
+          
+            </div>
+            <div class="cat_espoir" id="11" onclick="afficherInfluenceur('11')">
+             
+            </div>
+            <div class="catentrepreneur" id="12" onclick="afficherInfluenceur('12')">
+         
+            </div>
+      <div class="cataward" id="13" onclick="afficherInfluenceur('13')">
+              
+            </div>
+  </div>
+  <!--<div class="footer"></div> -->
+
+
+
+
+  <div class="globalInfluenceurs">
+      <div class="infoInflu">
+        <div class="influenceur_vote influ half_opacity" >
+          <p class="pcat_influ">Dadju &#128293;</p>
+        </div>
+
+        <div class="influenceur_vote influ half_opacity" )>
+          <p class="pcat_influ">Burna Boy &#128293;</p>
+        </div>
+        <div class="influenceur_vote influ half_opacity")>
+          <p class="pcat_influ">Diamond Platnumz</p>
+        </div>
+
+        <div class="influenceur_vote influ half_opacity")>
+          <p class="pcat_influ">Kwesi Arthur &#10052;&#65039;</p>
+        </div>
+        <div class="influenceur_vote influ half_opacity")>
+          <p class="pcat_influ">Tayc</p>
+        </div>
+
+        <div class="influenceur_vote influ half_opacity" )>
+          <p class="pcat_influ">Rotimi &#10052;&#65039;</p>
+        </div>
+        <br><br><br>  <div class="influenceur_vote influ half_opacity">
+              <p class="pcat_influ">Dadju &#128293;</p>
+            </div>
+
+            <div class="influenceur_vote influ half_opacity">
+              <p class="pcat_influ">Burna Boy &#128293;</p>
+            </div>
+            <div class="influenceur_vote influ half_opacity" >
+              <p class="pcat_influ">Diamond Platnumz</p>
+            </div>
+ 
+            <div class="influenceur_vote influ half_opacity" >
+              <p class="pcat_influ">Kwesi Arthur &#10052;&#65039;</p>
+            </div>
+            <div class="influenceur_vote influ half_opacity">
+              <p class="pcat_influ">Tayc</p>
+            </div>
+
+            <div class="influenceur_vote influ half_opacity" >
+              <p class="pcat_influ">Rotimi &#10052;&#65039;</p>
+            </div>
+            <br><br><br>
+
+<!--/******************************************************************************************************/b-->
+
+          <div class="wrapper">
+            <a class="cta" onclick="confirmerVote()" style="display: inline">
+
+              <span>VOTER</span>
+
+
+              <span>
+                <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                    <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                    <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                  </g>
+                </svg>
+              </span> 
+      </a>
+    </div>
+
+<!--/******************************************************************************************************/ -->
+
+
+        </div>
+  </div>
+
+
+
+    <div id="identifiants"  class="globalFormulaire"> 
+<div class="image" style="/*! margin: 30px; */margin-right: -250px;float: left;">  <img src="/static/img/gif.gif" style="display: inline-block;/*! margin: 100px; */" width="600" height="400"> </div>
+            <form action="/inscrit/" method="post" class = "formulaire" id= "idform" onsubmit="return submitUserForm();">
+              <br>
+              <input type="text" id="vote" name="vote" class='vote' />
+              <input type="text" id="categ" name="categ" class='categ' />
+              <br>
+              <div class= "champ" > <label for="pseudo"  >PSEUDO :</label></div>
+              <br><br>
+              <input type="text" id="pseudo" name="pseudo" />
+              <br>
+              <br>
+
+              <div class= "champ3" ><label for='genre' >GENRE :</label></div>
+              <br><br>
+              <select name="genre" id="genre">
+                <option value="">--Veuillez sélectionner votre genre--</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+                <option value="Autre">Autre</option>
+              </select>
+              <br>
+              <br>
+
+              <div class= "champ2" ><label for='genre'>AGE :</label></div>
+              <br><br>
+              <select name="age" id="age">
+                <option value="">--Veuillez sélectionner votre catégorie d'âge--</option>
+                <option value="-18ans">-18ans</option>
+                <option value="18-30ans">18-30ans</option>
+                <option value="30-40ans">30-40ans</option>
+                <option value="40-50ans">40-50ans</option>
+                <option value="+50ans">+50ans</option>
+              </select>
+              <br>
+              <br>
+
+              <div class= "champ4" > <label for='pays' >PAYS :</label></div>
+              <br><br>
+              <select name="pays" id="pays">
+                <option value="">--Veuillez sélectionner votre pays--</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Afrique du Sud">Afrique du Sud</option>
+                <option value="Albanie">Albanie</option>
+                <option value="Algérie">Algérie</option>
+                <option value="Allemagne">Allemagne</option>
+                <option value="Andorre">Andorre</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua-et-Barbuda">Antigua-et-Barbuda</option>
+                <option value="Arabie saoudite">Arabie saoudite</option>
+                <option value="Argentine">Argentine</option>
+                <option value="Arménie">Arménie</option>
+                <option value="Australie">Australie</option>
+                <option value="Autriche">Autriche</option>
+                <option value="Azerbaïdjan">Azerbaïdjan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahreïn">Bahreïn</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbade">Barbade</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Bélize">Bélize</option>
+                <option value="Bénin">Bénin</option>
+                <option value="Bhoutan">Bhoutan</option>
+                <option value="Biélorussie">Biélorussie</option>
+                <option value="Birmanie">Birmanie</option>
+                <option value="Bolivie">Bolivie</option>
+                <option value="Bosnie-Herzégovine">Bosnie-Herzégovine</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Brésil">Brésil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgarie">Bulgarie</option>
+                <option value="Burkina">Burkina</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodge">Cambodge</option>
+                <option value="Cameroun">Cameroun</option>
+                <option value="Canada">Canada</option>
+                <option value="Cap-Vert">Cap-Vert</option>
+                <option value="Centrafrique">Centrafrique</option>
+                <option value="Chili">Chili</option>
+                <option value="Chine">Chine</option>
+                <option value="Chypre">Chypre</option>
+                <option value="Colombie">Colombie</option>
+                <option value="Comores">Comores</option>
+                <option value="Congo">Congo</option>
+                <option value="République démocratique du Congo">République démocratique du Congo</option>
+                <option value="Îles Cook">Îles Cook</option>
+                <option value="Corée du Nord">Corée du Nord</option>
+                <option value="Corée du Sud">Corée du Sud</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Croatie">Croatie</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Danemark">Danemark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="République dominicaine">République dominicaine</option>
+                <option value="Dominique">Dominique</option>
+                <option value="Égypte">Égypte</option>
+                <option value="Émirats arabes unis">Émirats arabes unis</option>
+                <option value="Équateur">Équateur</option>
+                <option value="Érythrée">Érythrée</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Estonie">Estonie</option>
+                <option value="Eswatini">Eswatini</option>
+                <option value="États-Unis">États-Unis</option>
+                <option value="Éthiopie">Éthiopie</option>
+                <option value="Fidji">Fidji</option>
+                <option value="Finlande">Finlande</option>
+                <option value="France">France</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambie">Gambie</option>
+                <option value="Géorgie">Géorgie</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Grèce">Grèce</option>
+                <option value="Grenade">Grenade</option>
+                <option value="Guatémala">Guatémala</option>
+                <option value="Guinée">Guinée</option>
+                <option value="Guinée équatoriale">Guinée équatoriale</option>
+                <option value="Guinée-Bissao">Guinée-Bissao</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haïti">Haïti</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hongrie">Hongrie</option>
+                <option value="Inde">Inde</option>
+                <option value="Indonésie">Indonésie</option>
+                <option value="Irak">Irak</option>
+                <option value="Iran">Iran</option>
+                <option value="Irlande">Irlande</option>
+                <option value="Islande">Islande</option>
+                <option value="Israël">Israël</option>
+                <option value="Italie">Italie</option>
+                <option value="Jamaïque">Jamaïque</option>
+                <option value="Japon">Japon</option>
+                <option value="Jordanie">Jordanie</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kénya">Kénya</option>
+                <option value="Kirghizstan">Kirghizstan</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Kosovo">Kosovo</option>
+                <option value="Koweït">Koweït</option>
+                <option value="Laos">Laos</option>
+                <option value="Lésotho">Lésotho</option>
+                <option value="Lettonie">Lettonie</option>
+                <option value="Liban">Liban</option>
+                <option value="Libéria">Libéria</option>
+                <option value="Libye">Libye</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lituanie">Lituanie</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macédoine du Nord">Macédoine du Nord</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malaisie">Malaisie</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malte">Malte</option>
+                <option value="Maroc">Maroc</option>
+                <option value="Îles Marshall">Îles Marshall</option>
+                <option value="Maurice">Maurice</option>
+                <option value="Mauritanie">Mauritanie</option>
+                <option value="Mexique">Mexique</option>
+                <option value="Micronésie">Micronésie</option>
+                <option value="Moldavie">Moldavie</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolie">Mongolie</option>
+                <option value="Monténégro">Monténégro</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Namibie">Namibie</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Népal">Népal</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigéria">Nigéria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norvège">Norvège</option>
+                <option value="Nouvelle-Zélande">Nouvelle-Zélande</option>
+                <option value="Oman">Oman</option>
+                <option value="Ouganda">Ouganda</option>
+                <option value="Ouzbékistan">Ouzbékistan</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palaos">Palaos</option>
+                <option value="Panama">Panama</option>
+                <option value="Papouasie-Nouvelle-Guinée">Papouasie-Nouvelle-Guinée</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Pays-Bas">Pays-Bas</option>
+                <option value="Pérou">Pérou</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pologne">Pologne</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Roumanie">Roumanie</option>
+                <option value="Royaume-Uni">Royaume-Uni</option>
+                <option value="Russie">Russie</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint-Christophe-et-Niévès">Saint-Christophe-et-Niévès</option>
+                <option value="Sainte-Lucie">Sainte-Lucie</option>
+                <option value="Saint-Marin">Saint-Marin</option>
+                <option value="Saint-Vincent-et-les-Grenadines">Saint-Vincent-et-les-Grenadines</option>
+                <option value="Salomon">Salomon</option>
+                <option value="Salvador">Salvador</option>
+                <option value="Samoa">Samoa</option>
+                <option value="Sao Tomé-et-Principe">Sao Tomé-et-Principe</option>
+                <option value="Sénégal">Sénégal</option>
+                <option value="Serbie">Serbie</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapour">Singapour</option>
+                <option value="Slovaquie">Slovaquie</option>
+                <option value="Slovénie">Slovénie</option>
+                <option value="Somalie">Somalie</option>
+                <option value="Soudan">Soudan</option>
+                <option value="Soudan du Sud">Soudan du Sud</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Suède">Suède</option>
+                <option value="Suisse">Suisse</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Syrie">Syrie</option>
+                <option value="Tadjikistan">Tadjikistan</option>
+                <option value="Tanzanie">Tanzanie</option>
+                <option value="Tchad">Tchad</option>
+                <option value="Tchéquie">Tchéquie</option>
+                <option value="Thaïlande">Thaïlande</option>
+                <option value="Timor oriental">Timor oriental</option>
+                <option value="Togo">Togo</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinité-et-Tobago">Trinité-et-Tobago</option>
+                <option value="Tunisie">Tunisie</option>
+                <option value="Turkménistan">Turkménistan</option>
+                <option value="Turquie">Turquie</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Vatican">Vatican</option>
+                <option value="Vénézuéla">Vénézuéla</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Yémen">Yémen</option>
+                <option value="Zambie">Zambie</option>
+                <option value="Zimbabwé">Zimbabwé</option>
+              </select>
+
+              <br>
+              <br>
+              <br><br>
+
+             <div class="g-recaptcha" data-sitekey="6LfS_YsaAAAAACvVux8u0bIFscEXlBu43l6_5pVz" data-callback="verifyCaptcha"></div>
+            <div id="g-recaptcha-error"></div>
+              <br><br><br>
+              <input type="submit" value = "Confimer le vote" href="http://127.0.0.1:3309/interface"> 
+
+              </form>
+              
+
+              <!-- clé du site 6LfS_YsaAAAAACvVux8u0bIFscEXlBu43l6_5pVz-->
+              <!-- clé secrete 6LfS_YsaAAAAABjWN5RUZQRWcpAN9fkIJcaNkVjg        A ENLEVER-->
+          </div>
+
+              <script>
+            function submitUserForm() {
+                var response = grecaptcha.getResponse();
+                if(response.length == 0) {
+                    document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+                    return false;
+                }
+                return true;
+            }
+             
+            function verifyCaptcha() {
+                document.getElementById('g-recaptcha-error').innerHTML = '';
+            }
+            </script>
+
+          
+
+          <script>
+            document.getElementById("mySubmit").disabled = true;
+
+            $( ".pseudo" ).change(function() {
+              document.getElementById("mySubmit").disabled = false;
+            });
+
+          </script>
+
+              <script>
+                var dico_categorie_influenceur={{ dico }}
+              console.log(dico_categorie_influenceur)
+              </script>
+
+            <script type="text/javascript">
+               var all_categories = {'1': "Voyage", "2":"Fashion homme", "3": "Fashion femme", "4": "Chanteuses","5": "Chanteurs", "6": "Humour", "7": "Lifestyle", "8": "Food", "9": "Danseurs", "10":"Medias", "11": "Espoir", "12": "Entrepeneur", "13": "Awards"};
+                
+              $(".globalInfluenceurs").hide();
+              $(".globalFormulaire").hide();
+              $(".vote").hide();
+              $(".categ").hide();
+
+
+              function afficherInfluenceur(categorie){
+                $('.globalCategorie').hide();
+                $(".globalInfluenceurs").show();
+                $(".categ").attr("value", categorie);
+                $("#header").html("Choisissez votre influenceur dans la catégorie " +all_categories[categorie]);   
+              
+                //on n'affiche que les influenceurs de cette catégorie
+                var influenceurs= $(".influenceur_vote")
+                for (i=0; i<influenceurs.length;i++){
+                  console.log('entré')
+                  $(influenceurs[i]).attr('id',dico_categorie_influenceur[categorie][i] )
+                }
+
+                //le maximum etant 6, l'influenceur qui n'a pas d'id = pas 6 influenceur en jeu, pas beoin de montrerce box
+                for (i=0; i<influenceurs.length;i++){
+                  if ($(influenceurs[i]).attr('id')===undefined){
+                    $(influenceurs[i]).hide()
+                  }
+                }
+              }
+
+              function afficherIdentification(vote){
+                influenceur_vote=vote;
+                $(".categ").attr("value", vote);    
+              }
+
+              function confirmerVote(){
+                console.log('aaaaaaaaa')
+                if ($(".vote").attr('value')!==undefined){
+                  $('.globalInfluenceurs').hide();
+                  $(".globalFormulaire").show();
+                  $("#header").html("Plus qu'une étape !"); 
+                }else{
+                  alert("Veuillez voter pour un candidat");
+                } 
+              }
+
+              
+                $(".influenceur_vote" ).click(function() {
+                  var vote=$(this).attr('id');
+                  $(".vote").attr("value", vote); 
+                  $( ".influenceur_vote" ).removeClass( "full_opacity" ).addClass("half_opacity")
+                  $( this ).addClass( "full_opacity" );
+                })
+
+            </script>
+
+
+
+ 
+</body>
+</html>

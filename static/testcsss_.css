@@ -1,0 +1,318 @@
+body {
+  background-color: #f7dfdb;
+  font-family: cursive;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.globalCategorie{
+  border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+  text-align: center;
+  width: 1100px;
+  height: auto;
+  background-color: #fbaa99;
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px; 
+  padding-right: 50px;
+  overflow: hidden;
+}
+
+.cat{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-color:#f9eac3;
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.catfood{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/food.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.cattravel{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/travel.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+  
+} 
+
+.catlifestyle{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/lifestyle.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.cathumour{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/humour.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.catchanteur{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/chanteur.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+} 
+
+.catchanteuse{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/chanteuse.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+} 
+
+.catdanseurs{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/danseurs.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.catmedia{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/media.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+} 
+
+.catentrepreneur{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/entrepreneur.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+} 
+
+.cataward{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/award.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+} 
+
+.influenceur{
+  border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight:bold;
+  font-style: white;
+  width:150px;
+  height:100px;
+  display:inline-block;
+  background-image:url("img/award.png");
+  border-color: red;
+  border-width: 10px;
+  margin: 20px;
+  padding: 20px;
+} 
+
+.pcat {
+	padding-top: 75px;
+	letter-spacing : normal;
+	color: white;
+	text-shadow: 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, -1px 0 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black;
+}
+
+.cercle_div {
+    border-top-right-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    height:40px;
+    width:40px;
+}
+
+.bouton {
+  height: 50px;
+  width: 85px;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+.formulaire{
+  height: 50px;
+  width: 85px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.globalFormulaire{
+   border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  background-color: #fbaa99;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px; 
+  padding-right: 50px;
+  overflow: hidden;
+}
+
+.globalInfluenceurs{
+  border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+  text-align: center;
+  width: 1100px;
+  height: auto;
+  background-color: #fbaa99;
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px; 
+  padding-right: 50px;
+  overflow: hidden;
+}
+
+
+
+
+
+
